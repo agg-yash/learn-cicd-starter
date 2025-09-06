@@ -1,6 +1,4 @@
-https://github.com/agg-yash/learn-cicd-starter/actions/workflows/ci.yml/badge.svg
-
-# learn-cicd-starter (Notely)
+![Action Status](https://github.com/agg-yash/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 ## Local Development
 
