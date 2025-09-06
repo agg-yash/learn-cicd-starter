@@ -11,10 +11,9 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
 	"github.com/joho/godotenv"
+	_ "github.com/tursodatabase/libsql-client-go/libsql"
 
 	"github.com/bootdotdev/learn-cicd-starter/internal/database"
-
-	_ "github.com/tursodatabase/libsql-client-go/libsql"
 )
 
 type apiConfig struct {
@@ -24,7 +23,7 @@ type apiConfig struct {
 //go:embed static/*
 var staticFiles embed.FS
 
-func main() {
+func main(){
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Printf("warning: assuming default configuration. .env unreadable: %v", err)
